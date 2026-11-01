@@ -1,6 +1,6 @@
 describe("Sudoku Validator App", () => {
   beforeEach(() => {
-    cy.visit("http://localhost:5173"); // change to your app URL
+    cy.visit("https://mefexsnakesnladders.vercel.app/"); // change to your app URL
   });
   
   it("UI renders: Title", () => {

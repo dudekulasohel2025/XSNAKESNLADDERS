@@ -1,0 +1,195 @@
+* {
+    box-sizing: border-box;
+  }
+  
+  body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background: #ffffff;
+  }
+  
+  .page {
+    min-height: 100vh;
+    background: #f5f6fa;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 30px 15px;
+  }
+  
+  .game-card {
+    width: 560px;
+    max-width: 100%;
+    background: #ffffff;
+    border-radius: 8px;
+    padding: 12px 14px 14px;
+    box-shadow: 0 5px 18px rgba(0, 0, 0, 0.1);
+    text-align: center;
+  }
+  
+  h1 {
+    margin: 0 0 5px;
+    font-size: 18px;
+    font-weight: 800;
+    color: #111827;
+  }
+  
+  .game-info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 5px;
+    font-size: 9px;
+  }
+  
+  .turn-info {
+    display: flex;
+    gap: 4px;
+    align-items: center;
+  }
+  
+  .p1-text {
+    color: #ff3333;
+  }
+  
+  .p2-text {
+    color: #1688ed;
+  }
+  
+  .score-info {
+    display: flex;
+    gap: 5px;
+  }
+  
+  .score {
+    padding: 3px 6px;
+    border-radius: 9px;
+    background: #f7f8fa;
+    border: 1px solid #e7eaf0;
+    font-size: 8px;
+  }
+  
+  .p1-score {
+    color: #ff3333;
+  }
+  
+  .p2-score {
+    color: #1688ed;
+  }
+  
+  .status {
+    min-height: 15px;
+    margin-bottom: 5px;
+    font-size: 8px;
+    color: #4b5563;
+  }
+  
+  .board {
+    width: 100%;
+    aspect-ratio: 1 / 1;
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+    border: 1px solid #e3e7ed;
+  }
+  
+  .cell {
+    position: relative;
+    min-width: 0;
+    min-height: 0;
+    border: 1px solid #e3e7ed;
+    background: #ffffff;
+    text-align: left;
+    padding: 2px;
+  }
+  
+  .cell:nth-child(odd) {
+    background: #fafbfc;
+  }
+  
+  .number {
+    font-size: 7px;
+    color: #64748b;
+  }
+  
+  .special {
+    display: block;
+    font-size: 6px;
+    text-align: center;
+    margin-top: 2px;
+  }
+  
+  .ladder-cell .special {
+    color: #27ae60;
+  }
+  
+  .snake-cell .special {
+    color: #e95c5c;
+  }
+  
+  .players {
+    position: absolute;
+    bottom: 2px;
+    left: 2px;
+    right: 2px;
+    display: flex;
+    justify-content: center;
+    gap: 2px;
+  }
+  
+  .player {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    color: #ffffff;
+    font-size: 6px;
+    font-weight: 700;
+  }
+  
+  .player.p1 {
+    background: #ff3b3b;
+  }
+  
+  .player.p2 {
+    background: #1597e5;
+  }
+  
+  .actions {
+    display: flex;
+    justify-content: center;
+    gap: 7px;
+    margin-top: 7px;
+  }
+  
+  .actions button {
+    border: none;
+    border-radius: 4px;
+    padding: 5px 9px;
+    font-size: 8px;
+    font-weight: 700;
+    cursor: pointer;
+  }
+  
+  .roll-button {
+    background: #2864e8;
+    color: #ffffff;
+  }
+  
+  .roll-button:disabled {
+    opacity: 0.6;
+    cursor: not-allowed;
+  }
+  
+  .reset-button {
+    background: #ffffff;
+    color: #111827;
+    border: 1px solid #e0e4ea !important;
+  }
+  
+  .description {
+    margin: 6px 0 0;
+    font-size: 7px;
+    color: #64748b;
+  }

@@ -1,0 +1,6 @@
+{
+    "Test Case 1: Sudoku Validator App - UI renders: Title": "TEST_STATUS_SUCCESS",
+    "Test Case 2: Sudoku Validator App - UI renders: Players and Turn": "TEST_STATUS_SUCCESS",
+    "Test Case 3: Sudoku Validator App - UI renders: Description": "TEST_STATUS_SUCCESS",
+    "Test Case 4: Sudoku Validator App - UI renders: buttons": "TEST_STATUS_SUCCESS"
+}
